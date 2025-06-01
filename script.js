@@ -4,7 +4,10 @@ function runSimulation() {
     alert("양수의 열에너지를 입력해 주세요.");
     return;
   }
-
+if (inputJoule > 70000) {
+    alert("최대 입력 가능한 열에너지는 70,000줄입니다!");
+    return;
+  }
   const carnoEfficiency = 0.8;
   const carEfficiency = 0.25;
   const metersPerJoule = 0.01;
