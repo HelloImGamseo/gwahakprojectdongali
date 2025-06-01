@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>카르노 vs 자동차 열기관</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>카르노 기관 vs 자동차 엔진</h1>
+    <label for="heatInput">열에너지 (J):</label>
+    <input type="number" id="heatInput" value="1000000">
+    <button onclick="runSimulation()">출발!</button>
+
+    <div class="simulation">
+      <div id="carno" class="dot carno">🔵</div>
+      <div id="car" class="dot car">🔴</div>
+    </div>
+
+    <div id="resultText"></div>
+    <canvas id="velocityChart" width="400" height="200"></canvas>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
